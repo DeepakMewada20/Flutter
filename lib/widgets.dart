@@ -32,7 +32,7 @@ class X extends StatelessWidget {
               end: Alignment.bottomRight,
             ),
           ),
-          child: const StyledText(),
+          child: const StyledText(''),
         ),
       ),
     );
