@@ -4,9 +4,9 @@ import 'package:first_app/styled_text.dart';
 
 void main(List<String> args) {
   runApp(
-    const MaterialApp(
+    const MaterialApp( 
       home: Scaffold(
-        body: GradiantContener(),
+        body: GradiantContener(colors: [Color.fromARGB(239, 27, 113, 199),Colors.red],),
       ),
     ),
   );

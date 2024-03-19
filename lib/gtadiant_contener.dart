@@ -5,23 +5,20 @@ const startAlignment=Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
 
 class GradiantContener extends StatelessWidget {
-  const GradiantContener({super.key});
-  // const GradiantContener({super.key});
+  const GradiantContener({super.key,required this.colors});
+  final List<Color> colors;
+  //final Color colors1,colors2;
   @override
   Widget build(context) {
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [
-            Color.fromARGB(255, 25, 142, 124),
-            Color.fromARGB(0, 6, 88, 104),
-            Color.fromARGB(227, 163, 23, 161),
-          ],
+          colors:colors,
           begin: startAlignment,
           end: endAlignment,
         ),
       ),
-      child: const StyledText('text'),
+      child: const StyledText('Helow World'),
     );
   }
 }
