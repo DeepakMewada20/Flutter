@@ -5,14 +5,12 @@ class StyledText extends StatelessWidget {
   const StyledText(this.text,{super.key});
   @override
   Widget build(context) {
-    return Center(
-      child: Text(
+    return Text(
         text,
         style: const TextStyle(
         color: Color.fromARGB(255, 0, 0, 0),
         fontSize: 65,
         ),
-      ),
-    );
+      );
   }
 }

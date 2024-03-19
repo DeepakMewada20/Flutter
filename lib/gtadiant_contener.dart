@@ -18,7 +18,9 @@ class GradiantContener extends StatelessWidget {
           end: endAlignment,
         ),
       ),
-      child: const StyledText('Helow World'),
+      child: const Center(
+        child: StyledText('deepak'),
+      ),
     );
   }
 }
